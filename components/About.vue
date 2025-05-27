@@ -2,7 +2,7 @@
     <v-card color="surface" flat>
         <v-row>
             <v-col cols="auto" class="d-none d-md-flex">
-                <v-img src="/images/me.png" width="500" cover></v-img>
+                <v-img src="https://marvinopo.github.io/portfolio/images/me.png" width="500" cover></v-img>
             </v-col>
 
             <v-col cols="12" md="8">
@@ -10,7 +10,7 @@
                     <v-card-title class="text-h3">
                         <template v-if="isMobile">
                             <v-avatar color="white" size="150">
-                                <v-img alt="Mark" src="/images/me-avatar.png"></v-img>
+                                <v-img alt="Mark" src="https://marvinopo.github.io/portfolio/images/me-avatar.png"></v-img>
                             </v-avatar>
 
                             <v-spacer></v-spacer>
