@@ -8,7 +8,7 @@
             <v-timeline>
                 <v-timeline-item v-for="item in experience" :key="item.company" size="x-large">
                     <template v-slot:icon>
-                        <v-avatar v-if="item.image" :image="`/images/${item.image}`"></v-avatar>
+                        <v-avatar v-if="item.image" :image="`https://marvinopo.github.io/portfolio/images/${item.image}`"></v-avatar>
                         <v-icon v-else color="black">mdi-pound</v-icon>
                     </template>
                     <template v-slot:opposite>
