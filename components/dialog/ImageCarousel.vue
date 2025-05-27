@@ -7,8 +7,8 @@
                 <v-btn icon="mdi-close" @click="$emit('update:modelValue', false)"></v-btn>
             </v-card-title>
             <v-card-text>
-                <v-carousel :show-arrows="isMobile ? true : 'hover'" :height="isMobile ? 300 : 800">
-                    <v-carousel-item v-for="i in item.imageCount" :src="`images/${item.imageName}${i}.png`"
+                <v-carousel>
+                    <v-carousel-item v-for="i in item.imageCount" :src="`https://marvinopo.github.io/portfolio/images/${item.imageName}${i}.png`"
                         cover></v-carousel-item>
                 </v-carousel>
             </v-card-text>
@@ -29,3 +29,15 @@ const props = defineProps({
     }
 })
 </script>
+
+<style>
+.v-carousel {
+    height: 800px !important;
+}
+
+@media (max-width: 600px) {
+    .v-carousel {
+        height: 300px !important;
+    }
+}
+</style>

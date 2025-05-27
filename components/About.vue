@@ -8,9 +8,10 @@
             <v-col cols="12" md="8">
                 <v-container>
                     <v-card-title class="text-h3">
-                        <template v-if="isMobile">
+                        <template class="d-flex d-md-none">
                             <v-avatar color="white" size="150">
-                                <v-img alt="Mark" src="https://marvinopo.github.io/portfolio/images/me-avatar.png"></v-img>
+                                <v-img alt="Mark"
+                                    src="https://marvinopo.github.io/portfolio/images/me-avatar.png"></v-img>
                             </v-avatar>
 
                             <v-spacer></v-spacer>
