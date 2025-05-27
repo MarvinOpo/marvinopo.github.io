@@ -4,9 +4,6 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/portfolio/",
   },
-  nitro: {
-    preset: "static",
-  },
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   modules: [
