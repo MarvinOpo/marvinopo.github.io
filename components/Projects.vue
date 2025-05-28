@@ -8,7 +8,7 @@
 				<v-row justify="center">
 					<v-col v-for="project in projects" cols="12" md="6" lg="4">
 						<v-card class="project-item mx-auto" @click="openImageCarousel(project)">
-							<v-img :src="`https://marvinopo.github.io/portfolio/images/${project.imageName}1.png`"
+							<v-img :src="`/images/${project.imageName}1.png`"
 								max-height="260" cover></v-img>
 							<v-card-title>
 								{{ project.title }}

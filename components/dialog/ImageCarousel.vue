@@ -8,7 +8,7 @@
             </v-card-title>
             <v-card-text>
                 <v-carousel>
-                    <v-carousel-item v-for="i in item.imageCount" :src="`https://marvinopo.github.io/portfolio/images/${item.imageName}${i}.png`"
+                    <v-carousel-item v-for="i in item.imageCount" :src="`/images/${item.imageName}${i}.png`"
                         cover></v-carousel-item>
                 </v-carousel>
             </v-card-text>
