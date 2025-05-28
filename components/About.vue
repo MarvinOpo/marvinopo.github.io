@@ -2,7 +2,7 @@
     <v-card color="surface" flat>
         <v-row>
             <v-col cols="auto" class="d-none d-md-flex">
-                <v-img src="/images/me.png" width="500" cover></v-img>
+                <v-img src="https://marvinopo.github.io/images/me.png" width="500" cover></v-img>
             </v-col>
 
             <v-col cols="12" md="8">
@@ -11,7 +11,7 @@
                         <template class="d-flex d-md-none">
                             <v-avatar color="white" size="120">
                                 <v-img alt="Mark"
-                                    src="/images/me-avatar.png"></v-img>
+                                    src="https://marvinopo.github.io/images/me-avatar.png"></v-img>
                             </v-avatar>
 
                             <v-spacer></v-spacer>
@@ -97,7 +97,7 @@ const stacks = ref({
 })
 
 const viewCv = () => {
-    window.open('/files/MVOCV.pdf', '_blank')
+    window.open('https://marvinopo.github.io/files/MVOCV.pdf', '_blank')
 }
 
 </script>

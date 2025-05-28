@@ -9,7 +9,7 @@
                 <v-timeline-item v-for="item in experience" :key="item.company">
                     <template v-slot:icon>
                         <v-avatar v-if="item.image"
-                            :image="`/images/${item.image}`"></v-avatar>
+                            :image="`https://marvinopo.github.io/images/${item.image}`"></v-avatar>
                         <v-icon v-else color="black">mdi-pound</v-icon>
                     </template>
                     <template v-slot:opposite>
@@ -23,36 +23,6 @@
                 </v-timeline-item>
 
             </v-timeline>
-
-            <!-- <v-container>
-                <v-timeline>
-                    <v-timeline-item v-for="item in experience" :key="item.company">
-                        <template v-slot:icon>
-                            <v-avatar v-if="item.image"
-                                :image="`/images/${item.image}`"></v-avatar>
-                            <v-icon v-else color="black">mdi-pound</v-icon>
-                        </template>
-                        <template v-slot:opposite>
-                            <span>{{ item.date }}</span>
-                        </template>
-                        <v-card class="elevation-2">
-                            <v-card-title class="text-h5">
-                                {{ item.company }}
-                            </v-card-title>
-                            <v-card-subtitle>
-                                {{ item.role }} ({{ item.duration }})
-                            </v-card-subtitle>
-                            <v-card-text>
-                                {{ item.description }}
-
-                                <br><br>
-
-                                <b>Projects:</b> <i>{{ item.projects }}</i>
-                            </v-card-text>
-                        </v-card>
-                    </v-timeline-item>
-                </v-timeline>
-            </v-container> -->
         </v-card-text>
     </v-card>
 </template>
