@@ -1,6 +1,6 @@
 <template>
     <v-card color="transparent" class="w-100" flat>
-        <v-card-title class="text-h3">
+        <v-card-title class="text-h4">
             Contact
         </v-card-title>
         <v-card-text>

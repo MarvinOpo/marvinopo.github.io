@@ -1,14 +1,15 @@
 <template>
 	<div>
 		<v-card color="primary" flat>
-			<v-card-title class="text-h3">
+			<v-card-title class="text-h4">
 				Projects
 			</v-card-title>
 			<v-card-text>
 				<v-row justify="center">
 					<v-col v-for="project in projects" cols="12" md="6" lg="4">
 						<v-card class="project-item mx-auto" @click="openImageCarousel(project)">
-							<v-img :src="`https://marvinopo.github.io/portfolio/images/${project.imageName}1.png`" max-height="260" cover></v-img>
+							<v-img :src="`https://marvinopo.github.io/portfolio/images/${project.imageName}1.png`"
+								max-height="260" cover></v-img>
 							<v-card-title>
 								{{ project.title }}
 							</v-card-title>
@@ -36,6 +37,7 @@ const dialog = ref({
 
 const projects = ref([
 	{
+		code: 'E-LDS',
 		icon: 'mdi-school',
 		title: 'E-Learning and Development System',
 		description: 'A one-stop system providing innovative, cost-effective, and efficient training. A way to deliver education and training in the participant’s own space and time.',
@@ -45,6 +47,7 @@ const projects = ref([
 		imageCount: 4
 	},
 	{
+		code: 'HRIS',
 		icon: 'mdi-briefcase-account',
 		title: 'Human Resource Information System',
 		description: 'A comprehensive web-based system designed to manage and streamline human resource processes, including employee management, payroll, and time record tracking.',
@@ -54,6 +57,7 @@ const projects = ref([
 		imageCount: 5
 	},
 	{
+		code: 'E-SPMS',
 		icon: 'mdi-poll',
 		title: 'E-Strategic Performance Management System',
 		description: 'A performance evaluation system that ensure generation of timely, accurate, and reliable information for both performance monitoring/tracking, accomplishment reporting, program improvement and policy decision-making.',
@@ -63,6 +67,7 @@ const projects = ref([
 		imageCount: 5
 	},
 	{
+		code: 'DTS',
 		icon: 'mdi-file-document-multiple',
 		title: 'Document Tracking System',
 		description: 'A centralized system designed to monitor, manage, and track the flow of official documents within an organization. It ensures transparency, accountability, and timely access to records across departments.',
@@ -72,6 +77,7 @@ const projects = ref([
 		imageCount: 3
 	},
 	{
+		code: 'B-DTR',
 		icon: 'mdi-fingerprint',
 		title: 'Face Recognition & Biometric DTR',
 		description: '.NET-based systems designed to automate and manage employee attendance using facial recognition and biometric scanning.',

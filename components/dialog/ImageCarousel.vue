@@ -2,7 +2,7 @@
     <v-dialog v-model="props.modelValue" fullscreen>
         <v-card>
             <v-card-title class="d-flex">
-                {{ item.title }}
+                {{ item.code }}
                 <v-spacer></v-spacer>
                 <v-btn icon="mdi-close" @click="$emit('update:modelValue', false)"></v-btn>
             </v-card-title>
